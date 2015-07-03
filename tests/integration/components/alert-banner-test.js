@@ -9,11 +9,11 @@ moduleForComponent('alert-banner', 'Integration | Component | alert banner', {
 test('renders text in element with class alert-banner', function(assert) {
   assert.expect(2);
 
-  var alert = Alert.create({ text: 'Hello, world!' });
-  this.set('alert', alert);
+  var x = Alert.create({ text: 'Hello, world!' });
+  this.set('alert', x);
 
   this.render(hbs`
-    {{alert-banner alert=alert}}
+    {{alert-banner alert=x}}
   `);
 
   var $alert = this.$('.alert-banner');
