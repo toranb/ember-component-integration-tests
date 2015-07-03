@@ -10,7 +10,7 @@ test('renders text in element with class alert-banner', function(assert) {
   assert.expect(2);
 
   var x = Alert.create({ text: 'Hello, world!' });
-  this.set('alert', x);
+  this.set('x', x);
 
   this.render(hbs`
     {{alert-banner alert=x}}
